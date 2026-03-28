@@ -12,7 +12,7 @@ def test_saucedemo_login_and_product_check():
     driver.find_element(By.ID, "password").send_keys("secret_sauce")
     driver.find_element(By.ID, "login-button").click()
 
-    time.sleep(2)
+    time.sleep(6)
 
     title = driver.find_element(By.CLASS_NAME, "title").text
     assert title == "Products"
